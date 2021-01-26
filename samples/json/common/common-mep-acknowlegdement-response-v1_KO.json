@@ -6,33 +6,31 @@
     "source": "urn:com:ctt-express:interchange:source:saga:alerce-senda",
     "data_type": "schema/json/common/common-mep-acknowlegdement-response-v1.json",
     "kafka_headers": {
-      "kafka_headers": {
-        "topic": "aws-xxxxxx-yyy-zzzzzz-aaa-v1",
-        "headers": [
-          {
-            "name": "classId",
-            "value_as_string": "com.cttexpress.xxxxx.yyyy",
-            "type": "STRING"
-          },
-          {
-            "name": "isSigned",
-            "value_as_string": "true",
-            "type": "BOOLEAN"
-          }
-        ],
-        "key": {
-          "name": "theKey",
-          "value": "theValue"
+      "topic": "aws-xxxxxx-yyy-zzzzzz-aaa-v1",
+      "headers": [
+        {
+          "name": "classId",
+          "value_as_string": "com.cttexpress.xxxxx.yyyy",
+          "type": "STRING"
+        },
+        {
+          "name": "isSigned",
+          "value_as_string": "true",
+          "type": "BOOLEAN"
         }
+      ],
+      "key": {
+        "name": "theKey",
+        "value": "theValue"
       }
     }
   },
   "status": "REJECTED",
-  "ackTo": {
+  "ack_to": {
     "interchange_id": "a974c235-758e-4c43-b7e0-f71e08464518",
-    "timeStamp": "2020-11-26T04:51:30.1234567+01:00",
+    "time_stamp": "2020-11-26T04:51:30.1234567+01:00",
     "source": "urn:com:ctt-express:interchange:source:settlements",
-    "data_ype": "schema/json/traffic-alerce-senda-error-response-v1.json"
+    "data_type": "schema/json/traffic-alerce-senda-error-response-v1.json"
   },
   "error": {
     "code": 409,
