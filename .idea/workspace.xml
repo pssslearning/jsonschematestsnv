@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611675472064</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Metadata + Ack Schemas">
+      <created>1611677895178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611677895179</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Metadata + Ack Schemas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metadata + Ack Schemas" />
   </component>
 </project>

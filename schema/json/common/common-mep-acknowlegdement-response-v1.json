@@ -7,12 +7,12 @@
   "required": [
     "metadata",
     "status",
-    "ackTo"
+    "ack_to"
   ],
   "oneOf": [
     {
       "required": [
-        "ackData"
+        "ack_data"
       ]
     },
     {
@@ -37,22 +37,22 @@
         "ACCEPTED"
       ]
     },
-    "ackTo": {
-      "$id": "#/properties/ackTo",
+    "ack_to": {
+      "$id": "#/properties/ack_to",
       "type": "object",
       "title": "Referencia al mensaje Original",
       "description": "Referencia al mensaje Original sobre cuyo procesamiento se está informando con este mensaje de Acknowledgement.",
       "required": [
-        "interchangeId",
-        "timeStamp",
+        "interchange_id",
+        "time_stamp",
         "source",
-        "dataType"
+        "data_type"
       ],
       "properties": {
-        "interchangeId": {
-          "$id": "#/properties/ackTo/properties/interchangeId",
+        "interchange_id": {
+          "$id": "#/properties/ack_to/properties/interchange_id",
           "type": "string",
-          "title": "atributo interchangeId del mensaje original",
+          "title": "atributo interchange_id del mensaje original",
           "description": "Identificador único de la instancia del mensaje de intercambio Original al que se hace referencia (Nota: preferiblemente utilizar un Version 4 UUID)",
           "examples": [
             "a974c235-758e-4c43-b7e0-f71e08464518"
@@ -60,10 +60,10 @@
           "minLength": 36,
           "maxLength": 128
         },
-        "timeStamp": {
-          "$id": "#/properties/ackTo/properties/timeStamp",
+        "time_stamp": {
+          "$id": "#/properties/ack_to/properties/time_stamp",
           "type": "string",
-          "title": "atributo timeStamp del mensaje original",
+          "title": "atributo time_stamp del mensaje original",
           "description": "Time Stamp de la instancia del mensaje de intercambio Original al que se hace referencia. Formato ISO 8601 (Nota: preferiblemente incluir separador 'T' entre fecha y hora, nanosegundos y zona horaria formato '+HH:mm')",
           "examples": [
             "2020-11-26T04:50:29.9699934+01:00"
@@ -72,7 +72,7 @@
           "maxLength": 33
         },
         "source": {
-          "$id": "#/properties/ackTo/properties/source",
+          "$id": "#/properties/ack_to/properties/source",
           "type": "string",
           "title": "atributo source del mensaje original",
           "description": "Identificador único del Sistema/Aplicativo/Microservicio que originó o es 'fuente' u 'origen' del mensaje de intercambio original. Formato: URN (Nombre de Recurso Uniforme / Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
@@ -82,13 +82,13 @@
           "minLength": 36,
           "maxLength": 128
         },
-        "dataType": {
-          "$id": "#/properties/ackTo/properties/dataType",
+        "data_type": {
+          "$id": "#/properties/ack_to/properties/data_type",
           "type": "string",
-          "title": "atributo dataType del mensaje original",
+          "title": "atributo data_type del mensaje original",
           "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos del mensaje de intercambio original. Formato URN Nombre de Recurso Uniforme o URN (acrónimo inglés de Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
           "examples": [
-            "urn:com:ctt-express:interchange:data-type:delivery-routes:v1"
+            "urn:com:ctt-express:interchange:data_type:delivery-routes:v1"
           ],
           "minLength": 36,
           "maxLength": 128
@@ -96,19 +96,19 @@
       },
       "additionalProperties": false
     },
-    "ackData": {
-      "$id": "#/properties/ackData",
+    "ack_data": {
+      "$id": "#/properties/ack_data",
       "type": "object",
       "title": "Datos de acompañamiento del mensaje de Acknowledgement.",
       "description": "Datos de acompañamiento del mensaje de Acknowledgement.",
       "required": [
         "endpoint",
-        "dataType",
+        "data_type",
         "data"
       ],
       "properties": {
         "endpoint": {
-          "$id": "#/properties/ackData/properties/endpoint",
+          "$id": "#/properties/ack_data/properties/endpoint",
           "type": "string",
           "title": "Referencia al endpoint de proceso",
           "description": "Referencia al endpoint de proceso del mensaje original.",
@@ -116,17 +116,17 @@
             "xxxx/altaConductor"
           ]
         },
-        "dataType": {
-          "$id": "#/properties/ackData/properties/dataType",
+        "data_type": {
+          "$id": "#/properties/ack_data/properties/data_type",
           "type": "string",
-          "title": "dataType del payload del mensaje de Acknowledgement",
+          "title": "data_type del payload del mensaje de Acknowledgement",
           "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos ('data') del mensaje de Acnowledgement. Formato URN Nombre de Recurso Uniforme o URN (acrónimo inglés de Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
           "examples": [
-            "urn:com:ctt-express:interchange:data-type:saga:alerce-senda-response:v1"
+            "urn:com:ctt-express:interchange:data_type:saga:alerce-senda-response:v1"
           ]
         },
         "data": {
-          "$id": "#/properties/ackData/properties/data",
+          "$id": "#/properties/ack_data/properties/data",
           "type": "object",
           "title": "payload/data del mensaje de Acknowledgement",
           "description": "Payload o carga principal de datos de acompañamiento del mensaje de Acknowledgement",
@@ -142,7 +142,7 @@
       "description": "Datos de acompañamiento del mensaje de Acknowledgement en caso que el proceso del mensaje original termine con Error",
       "required": [
         "code",
-        "dateTime",
+        "date_time",
         "type",
         "description"
       ],
@@ -157,10 +157,10 @@
             409
           ]
         },
-        "dateTime": {
-          "$id": "#/properties/error/properties/dateTime",
+        "date_time": {
+          "$id": "#/properties/error/properties/date_time",
           "type": "string",
-          "title": "Error dateTime del error reportado",
+          "title": "Error date_time del error reportado",
           "description": "Time Stamp en Formato ISO 8601 (Nota: preferiblemente incluir separador 'T' entre fecha y hora, nanosegundos y zona horaria formato '+HH:mm')",
           "examples": [
             "2020-11-26T04:50:29.9699934+01:00"
@@ -186,8 +186,8 @@
             "El envío de datos a SGC no ha sido posible. Por favor, notifique esta circunstancia al equipo de soporte.(409)"
           ]
         },
-        "extendedInfo": {
-          "$id": "#/properties/error/properties/extendedInfo",
+        "extended_info": {
+          "$id": "#/properties/error/properties/extended_info",
           "type": "object",
           "title": "Payload (OPCIONAL) info adicional del Error.",
           "description": "Payload (OPCIONAL) con información estructurada de acompañamiento de la condición de Error producida",
