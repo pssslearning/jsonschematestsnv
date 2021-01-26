@@ -3,7 +3,7 @@
   "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/common/common-mep-acknowlegdement-response-v1.json",
   "type": "object",
   "title": "common-mep-acknowlegdement-response-v1 (Domain:Common)(Classification: MEP)(Version: v1.0.0)",
-  "description": "Mensaje de ACK Response Común/Inespecífico.",
+  "description": "Mensaje de ACK Response Común/Inespecífico",
   "required": [
     "metadata",
     "status",
