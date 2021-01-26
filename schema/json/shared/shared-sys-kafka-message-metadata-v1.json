@@ -1,0 +1,291 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://pssslearning.github.io/jsonschematests/schema/json/shared/v1/kafka-messages-metadata-v1.json",
+  "type": "object",
+  "title": "kafka-messages-metadata-v1",
+  "description": "Sección de contexto/metadata común para los mensajes de intercambio en Apache Kafka",
+  "required": [
+    "interchangeId",
+    "timeStamp",
+    "source",
+    "dataType"
+  ],
+  "properties": {
+    "interchangeId": {
+      "$id": "#/properties/interchangeId",
+      "type": "string",
+      "title": "The message interchangeId",
+      "description": "Identificador único de la instancia del mensaje de intercambio (Nota: preferiblemente utilizar un Version 4 UUID)",
+      "examples": [
+        "cb36fa52-ed82-4c97-b213-4ae98b63b0bf"
+      ],
+      "minLength": 36,
+      "maxLength": 128
+    },
+    "correlationId": {
+      "$id": "#/properties/correlationId",
+      "type": "string",
+      "title": "The message correlationId",
+      "description": "Identificador único de correlación de mensajes que forman parte de una'familia' de mensajes asociados entre sí (respuestas asíncronas asociadas, re-ennvíos, acknowledgements ... (Nota: preferiblemente utilizar un Version 4 UUID)",
+      "examples": [
+        "a54e52b5-f381-440c-a96c-98f23a9d4adc"
+      ],
+      "minLength": 36,
+      "maxLength": 128
+    },
+    "timeStamp": {
+      "$id": "#/properties/timeStamp",
+      "type": "string",
+      "title": "The message timeStamp",
+      "description": "Time Stamp del momento en que el mensaje de intercambio ha sido emitido Formato ISO 8601 (Nota: preferiblemente incluir separador 'T' entre fecha y hora, nanosegundos y zona horaria formato '+HH:mm')",
+      "examples": [
+        "2020-11-26T04:50:29.9699934+01:00"
+      ],
+      "minLength": 10,
+      "maxLength": 33
+    },
+    "source": {
+      "$id": "#/properties/source",
+      "type": "string",
+      "title": "The message source",
+      "description": "Identificador único del Sistema/Aplicativo/Microservicio que origina o es 'fuente' u 'origen' del mensaje de intercambio. Formato: URN (Nombre de Recurso Uniforme / Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
+      "examples": [
+        "urn:es:ctt-express:interchange:source:ms-settlements"
+      ],
+      "minLength": 36,
+      "maxLength": 128
+    },
+    "dataType": {
+      "$id": "#/properties/dataType",
+      "type": "string",
+      "title": "The message payload dataType",
+      "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos del mensaje de intercambio. Formato URN Nombre de Recurso Uniforme o URN (acrónimo inglés de Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
+      "examples": [
+        "urn:com:ctt-express:interchange:data-type:supplier-delivery-routes:v1"
+      ],
+      "minLength": 36,
+      "maxLength": 128
+    },
+    "kafkaHeaders": {
+      "$id": "#/properties/kafkaHeaders",
+      "type": "object",
+      "title": "The kafka Headers Info.",
+      "description": "Elementos que forman parte de las cabeceras de los mensajes cuando son depositados en el bus de Apache Kafka. Permite trazar información de contexto valiosa cuando el mensaje de intercambio se ha almacenado en un sistema de persistencia, por ejemplo ElasticSearch. Igualmente permite conocer las cabeceras que deben usarse cuando el mensaje debe de ser nuevamente repuesto en el bus de mensajería de Apache Kafka (redeliveries, ...)",
+      "required": [
+        "topic",
+        "headers"
+      ],
+      "properties": {
+        "topic": {
+          "$id": "#/properties/kafkaHeaders/properties/topic",
+          "type": "string",
+          "title": "The Kafka topic",
+          "description": "Nombre del Tópico de Kafka donde el mensaje de intercambio fué depositado.",
+          "examples": [
+            "supplier-delivery-route-uat"
+          ],
+          "minLength": 8,
+          "maxLength": 128
+        },
+        "key": {
+          "$id": "#/properties/kafkaHeaders/properties/key",
+          "type": "object",
+          "title": "The message Kafka Key",
+          "description": "Tupla Nombre/Valor de la información de la Clave 'key' del mensaje.",
+          "examples": [
+            {
+              "name": "currentDay",
+              "value": "20201130"
+            }
+          ],
+          "required": [
+            "name",
+            "value"
+          ],
+          "properties": {
+            "name": {
+              "$id": "#/properties/kafkaHeaders/properties/key/properties/name",
+              "type": "string",
+              "title": "The key name",
+              "description": "Nombre de la Clave 'key name'",
+              "examples": [
+                "currentDay"
+              ]
+            },
+            "value": {
+              "$id": "#/properties/kafkaHeaders/properties/key/properties/value",
+              "type": "string",
+              "title": "The key value",
+              "description": "Valor/Contenido de la clave 'key value'",
+              "examples": [
+                "20201130"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "headers": {
+          "$id": "#/properties/kafkaHeaders/properties/headers",
+          "type": "array",
+          "title": "The kafka headers array",
+          "description": "Tuplas de Nombre-Valor-Tipo para cada cabecera individual de Kafka",
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/kafkaHeaders/properties/headers/items",
+            "type": "object",
+            "title": "Every Kafka Header item",
+            "description": "Cada item de Tupla de Nombre-Valor-Tipo para cada cabecera individual de Kafka",
+            "required": [
+              "name",
+              "valueAsString",
+              "type"
+            ],
+            "properties": {
+              "name": {
+                "$id": "#/properties/kafkaHeaders/properties/headers/items/properties/name",
+                "type": "string",
+                "title": "The kafka header name",
+                "description": "Nombre de la Cabecera ('Header Name')",
+                "examples": [
+                  "typeId"
+                ]
+              },
+              "valueAsString": {
+                "$id": "#/properties/kafkaHeaders/properties/headers/items/properties/valueAsString",
+                "type": "string",
+                "title": "The kafka header value as String",
+                "description": "Valor/Contenido de la Cabecera ('Header Value') serializado como STRING",
+                "examples": [
+                  "com.cttexpress.newDeliveryRouteEvent"
+                ]
+              },
+              "type": {
+                "$id": "#/properties/kafkaHeaders/properties/headers/items/properties/type",
+                "enum": [
+                  "STRING",
+                  "INTEGER",
+                  "DOUBLE",
+                  "FLOAT",
+                  "BOOLEAN"
+                ],
+                "title": "The kafka header value real type",
+                "description": "Tipo real del Valor/Contenido de la Cabecera ('Header Value Type')",
+                "examples": [
+                  "STRING"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "redelivery": {
+      "$id": "#/properties/redelivery",
+      "type": "object",
+      "title": "The message redelivery info",
+      "description": "Se incluirá cuando el mensaje de intercambio es depositado nuevamente (re-delivery) en el bus de mensajería por algun motivo o circunstancia. Seccion de datos que permite referenciar así unívocamente el mensaje original que fué origen de su re-entrega. ",
+      "required": [
+        "interchangeId",
+        "extendedInfo"
+      ],
+      "properties": {
+        "interchangeId": {
+          "$id": "#/properties/redelivery/properties/interchangeId",
+          "type": "string",
+          "title": "The redelivered original interchangeId reference",
+          "description": "Identificador único de la instancia original del mensaje mensaje de intercambio que se está depositando de nuevo ('re-delivered'). (Nota: preferiblemente utilizar un Version 4 UUID) ",
+          "examples": [
+            "a974c235-758e-4c43-b7e0-f71e08464518"
+          ],
+          "minLength": 36,
+          "maxLength": 128
+        },
+        "extendedInfo": {
+          "$id": "#/properties/redelivery/properties/extendedInfo",
+          "type": "object",
+          "title": "The extended info regarding the context of the message redelivery",
+          "description": "Información adicional que acompaña al re-envío del mensaje (contexto/causa/...)",
+          "required": [
+            "dataType",
+            "data"
+          ],
+          "properties": {
+            "dataType": {
+              "$id": "#/properties/redelivery/properties/extendedInfo/properties/dataType",
+              "type": "string",
+              "title": "The Extended Info dataType",
+              "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos de la información extendida. Formato URN Nombre de Recurso Uniforme o URN (acrónimo inglés de Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
+              "examples": [
+                "urn:com:ctt-express:interchange:data-type:rdev-reason-xa24:v1"
+              ]
+            },
+            "data": {
+              "$id": "#/properties/redelivery/properties/extendedInfo/properties/data",
+              "type": "object",
+              "title": "The extended info data payload",
+              "description": "Contenido de los datos conforme al esquema/tipo definido por el anterior atributo.",
+              "required": [],
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "sagaExtendedInfo": {
+      "$id": "#/properties/sagaExtendedInfo",
+      "type": "array",
+      "title": "The saga Extended Info",
+      "description": "Area de configuración de datos para el patrón de Saga.",
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/sagaExtendedInfo/items",
+        "type": "object",
+        "title": "Every saga Extended Info item.",
+        "description": "Cada una de las entradas que conforman cada unidad de tratamiento.",
+        "required": [
+          "recipient",
+          "isAckRequired"
+        ],
+        "properties": {
+          "recipient": {
+            "$id": "#/properties/sagaExtendedInfo/items/properties/recipient",
+            "type": "string",
+            "title": "The message recipient",
+            "description": "Identificador único del Sistema/Aplicativo/Microservicio que es 'destinatario' del mensaje de intercambio. Formato: URN (Nombre de Recurso Uniforme / Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
+            "examples": [
+              "urn:com:ctt-express:interchange:recipient:alerce-senda"
+            ],
+            "minLength": 36,
+            "maxLength": 128
+          },
+          "isAckRequired": {
+            "$id": "#/properties/sagaExtendedInfo/items/properties/isAckRequired",
+            "type": "boolean",
+            "title": "The isAckRequired flag",
+            "description": "Indicador/flag de si se requiere generar mensaje de Acknowledgement.",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "doCompensation": {
+            "$id": "#/properties/sagaExtendedInfo/items/properties/doCompensation",
+            "type": "boolean",
+            "title": "The doCompensation flag",
+            "description": "Indicador/flag de si se requiere disparar el endpoint para compensación del tratamiento anterior del mensaje.",
+            "default": false,
+            "examples": [
+              true
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
