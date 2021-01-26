@@ -59,9 +59,9 @@
       "$id": "#/properties/data_type",
       "type": "string",
       "title": "The message payload data_type",
-      "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos del mensaje de intercambio. Formato URN Nombre de Recurso Uniforme o URN (acrónimo inglés de Uniform Resource Name) Será una de las entradas de un Diccionario de identificadores.",
+      "description": "Identificador único del Tipo/Esquema de los datos que contiene la sección de datos del mensaje de intercambio. Se incluirá la ruta RELATIVA del árbol del repositorio de Schemas",
       "examples": [
-        "urn:com:ctt-express:interchange:data-type:supplier-delivery-routes:v1"
+        "schema/json/traffic/<domain>.<classification>.<description>.<version>.json"
       ],
       "minLength": 36,
       "maxLength": 128

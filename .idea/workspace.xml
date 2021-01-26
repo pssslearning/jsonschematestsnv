@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611682864424</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Traffic Schemas Added III">
+      <created>1611683750509</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611683750509</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +158,7 @@
     <MESSAGE value="ACK Schema VI" />
     <MESSAGE value="Traffic Schemas Added" />
     <MESSAGE value="Traffic Schemas Added II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Traffic Schemas Added II" />
+    <MESSAGE value="Traffic Schemas Added III" />
+    <option name="LAST_COMMIT_MESSAGE" value="Traffic Schemas Added III" />
   </component>
 </project>
