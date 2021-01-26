@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "interchange_id": "8f15ec7b-aa64-45df-9f49-efdabb16c989",
+    "time_stamp": "2020-11-26T04:51:30.1234567+01:00",
+    "correlation_id": "16b4c0e7-09c0-452c-9b27-34fe53fff444",
+    "source": "urn:com:ctt-express:interchange:source:saga:alerce-senda",
+    "data_type": "schema/json/common/common-mep-acknowlegdement-response-v1.json",
+    "kafka_headers": {
+      "topic": "aws-xxxxxx-yyy-zzzzzz-aaa-v1",
+      "headers": [
+        {
+          "name": "classId",
+          "value_as_string": "com.cttexpress.xxxxx.yyyy",
+          "type": "STRING"
+        },
+        {
+          "name": "isSigned",
+          "value_as_string": "true",
+          "type": "BOOLEAN"
+        }
+      ],
+      "key": {
+        "name": "theKey",
+        "value": "theValue"
+      }
+    }
+  },
+  "status": "ACCEPTED",
+  "ack_to": {
+    "interchange_id": "a974c235-758e-4c43-b7e0-f71e08464518",
+    "time_stamp": "2020-11-26T04:51:30.1234567+01:00",
+    "source": "urn:com:ctt-express:interchange:source:settlements",
+    "dataType": "schema/json/xxxxx-yyy-zzzzz-mmmmmm-v1.json"
+  },
+  "ackData": {
+    "endpoint": "xxxx/altaConductor",
+    "data_type": "schema/json/traffic-alerce-senda-response-v1.json",
+    "data": {
+      "resultados": [
+        {
+          "estado": "OK",
+          "dele_codigo": "110",
+          "cond_codigo": "110U0003"
+        }
+      ]
+    }
+  }
+}

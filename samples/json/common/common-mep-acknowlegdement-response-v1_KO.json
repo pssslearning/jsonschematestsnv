@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "interchange_id": "8f15ec7b-aa64-45df-9f49-efdabb16c989",
+    "correlation_id": "16b4c0e7-09c0-452c-9b27-34fe53fff444",
+    "time_stamp": "2020-11-26T04:51:30.1234567+01:00",
+    "source": "urn:com:ctt-express:interchange:source:saga:alerce-senda",
+    "data_type": "schema/json/common/common-mep-acknowlegdement-response-v1.json",
+    "kafka_headers": {
+      "kafka_headers": {
+        "topic": "aws-xxxxxx-yyy-zzzzzz-aaa-v1",
+        "headers": [
+          {
+            "name": "classId",
+            "value_as_string": "com.cttexpress.xxxxx.yyyy",
+            "type": "STRING"
+          },
+          {
+            "name": "isSigned",
+            "value_as_string": "true",
+            "type": "BOOLEAN"
+          }
+        ],
+        "key": {
+          "name": "theKey",
+          "value": "theValue"
+        }
+      }
+    }
+  },
+  "status": "REJECTED",
+  "ackTo": {
+    "interchange_id": "a974c235-758e-4c43-b7e0-f71e08464518",
+    "timeStamp": "2020-11-26T04:51:30.1234567+01:00",
+    "source": "urn:com:ctt-express:interchange:source:settlements",
+    "data_ype": "urn:com:ctt-express:interchange:data-type:delivery-routes:v1"
+  },
+  "error": {
+    "code": 409,
+    "date_time": "2020-11-26T04:51:30.1234567+01:00",
+    "type": "UNKNOWN",
+    "description": "El envío de datos a SGC no ha sido posible. Por favor, notifique esta circunstancia al equipo de soporte.(409)",
+    "extended_info": {
+      "endpoint": "xxxx/altaConductor",
+      "error_message": "clientExtId 2978695 ALREADY EXISTS WITH clientId 30050",
+      "error_number": 409
+    }
+  }
+}

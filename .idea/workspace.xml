@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_KO.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_OK.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +31,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/json/common" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\common" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv" />
     </key>
   </component>
@@ -74,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611678742249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ACK Schema II">
+      <created>1611678848625</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611678848625</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Metadata + Ack Schemas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metadata + Ack Schemas" />
+    <MESSAGE value="ACK Schema II" />
+    <option name="LAST_COMMIT_MESSAGE" value="ACK Schema II" />
   </component>
 </project>
