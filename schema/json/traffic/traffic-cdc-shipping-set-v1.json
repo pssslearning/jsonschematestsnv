@@ -18,29 +18,29 @@
       "title": "The remarks schema",
       "description": "An explanation about the purpose of this instance."
     },
-    "shipping-item-events": {
-      "$id": "#/properties/shipping-item-events",
+    "shipping_item_events": {
+      "$id": "#/properties/shipping_item_events",
       "type": "array",
-      "title": "The shipping-item-events schema",
+      "title": "The shipping_item_events schema",
       "description": "An explanation about the purpose of this instance.",
       "additionalItems": false,
       "items": {
-        "$id": "#/properties/shipping-item-events/items",
+        "$id": "#/properties/shipping_item_events/items",
         "type": "object",
         "title": "The items schema",
         "description": "An explanation about the purpose of this instance.",
         "required": [
           "uid",
-          "itemCode",
-          "eventDatetime",
-          "isNulled",
-          "shippingStatusCode",
-          "eventAgencyCode",
-          "isMobilityEvent"
+          "item_code",
+          "event_date_time",
+          "is_nulled",
+          "shipping_status_code",
+          "event_agency_code",
+          "is_mobility_event"
         ],
         "properties": {
           "ruid": {
-            "$id": "#/properties/shipping-item-events/items/properties/ruid",
+            "$id": "#/properties/shipping_item_events/items/properties/ruid",
             "type": "string",
             "title": "The ruid schema",
             "description": "An explanation about the purpose of this instance.",
@@ -52,7 +52,7 @@
             "maxLength": 128
           },
           "item_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/item_code",
+            "$id": "#/properties/shipping_item_events/items/properties/item_code",
             "type": "string",
             "title": "The item_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -64,7 +64,7 @@
             "maxLength": 30
           },
           "shipping_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/shipping_code",
+            "$id": "#/properties/shipping_item_events/items/properties/shipping_code",
             "type": "string",
             "title": "The shipping_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -76,7 +76,7 @@
             "maxLength": 30
           },		  
           "event_datetime": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_datetime",
+            "$id": "#/properties/shipping_item_events/items/properties/event_datetime",
             "type": "string",
             "title": "The event_datetime schema",
             "description": "An explanation about the purpose of this instance.",
@@ -88,7 +88,7 @@
             "maxLength": 25
           },
           "is_nulled": {
-            "$id": "#/properties/shipping-item-events/items/properties/is_nulled",
+            "$id": "#/properties/shipping_item_events/items/properties/is_nulled",
             "type": "string",
             "title": "The is_nulled schema",
             "description": "An explanation about the purpose of this instance.",
@@ -99,7 +99,7 @@
             "pattern": "^[0-1]$"
           },
           "shipping_status_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/shipping_status_code",
+            "$id": "#/properties/shipping_item_events/items/properties/shipping_status_code",
             "type": "string",
             "title": "The shipping_status_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -110,7 +110,7 @@
             "pattern": "^[0-99]$"
           },
           "shipping_status_plus_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/shipping_status_plus_code",
+            "$id": "#/properties/shipping_item_events/items/properties/shipping_status_plus_code",
             "type": "string",
             "title": "The shipping_status_plus_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -120,7 +120,7 @@
             ]
           },
           "event_text": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_text",
+            "$id": "#/properties/shipping_item_events/items/properties/event_text",
             "type": "string",
             "title": "The event_text schema",
             "description": "An explanation about the purpose of this instance.",
@@ -130,7 +130,7 @@
             ]
           },
           "event_agency_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_agency_code",
+            "$id": "#/properties/shipping_item_events/items/properties/event_agency_code",
             "type": "string",
             "title": "The event_agency_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -140,7 +140,7 @@
             ]
           },
           "incident_type_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/incident_type_code",
+            "$id": "#/properties/shipping_item_events/items/properties/incident_type_code",
             "type": "string",
             "title": "The incident_type_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -150,7 +150,7 @@
             ]
           },
           "event_courier_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_courier_code",
+            "$id": "#/properties/shipping_item_events/items/properties/event_courier_code",
             "type": "string",
             "title": "The event_courier_code schema",
             "description": "An explanation about the purpose of this instance.",
@@ -160,7 +160,7 @@
             ]
           },
           "event_latitude_gps": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_latitude_gps",
+            "$id": "#/properties/shipping_item_events/items/properties/event_latitude_gps",
             "type": "number",
             "title": "The event_latitude_gps schema",
             "description": "An explanation about the purpose of this instance.",
@@ -170,7 +170,7 @@
             ]
           },
           "event_longitude_gps": {
-            "$id": "#/properties/shipping-item-events/items/properties/event_longitude_gps",
+            "$id": "#/properties/shipping_item_events/items/properties/event_longitude_gps",
             "type": "number",
             "title": "The event_longitude_gps schema",
             "description": "An explanation about the purpose of this instance.",
@@ -179,10 +179,10 @@
               -5.8342299
             ]
           },
-          "is_nobility_event": {
-            "$id": "#/properties/shipping-item-events/items/properties/is_nobility_event",
+          "is_mobility_event": {
+            "$id": "#/properties/shipping_item_events/items/properties/is_mobility_event",
             "type": "string",
-            "title": "The is_nobility_event schema",
+            "title": "The is_mobility_event schema",
             "description": "An explanation about the purpose of this instance.",
             "default": "",
             "examples": [
@@ -190,7 +190,7 @@
             ]
           },
           "stop_code": {
-            "$id": "#/properties/shipping-item-events/items/properties/stop_code",
+            "$id": "#/properties/shipping_item_events/items/properties/stop_code",
             "type": "string",
             "title": "The stop_code schema",
             "description": "An explanation about the purpose of this instance.",

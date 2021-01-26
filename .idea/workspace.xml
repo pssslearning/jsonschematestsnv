@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611682266834</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Traffic Schemas Added II">
+      <created>1611682864424</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611682864424</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +151,7 @@
     <MESSAGE value="ACK Schema V" />
     <MESSAGE value="ACK Schema VI" />
     <MESSAGE value="Traffic Schemas Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Traffic Schemas Added" />
+    <MESSAGE value="Traffic Schemas Added II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Traffic Schemas Added II" />
   </component>
 </project>
