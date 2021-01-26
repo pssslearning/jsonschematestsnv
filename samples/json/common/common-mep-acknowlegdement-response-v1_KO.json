@@ -32,7 +32,7 @@
     "interchange_id": "a974c235-758e-4c43-b7e0-f71e08464518",
     "timeStamp": "2020-11-26T04:51:30.1234567+01:00",
     "source": "urn:com:ctt-express:interchange:source:settlements",
-    "data_ype": "urn:com:ctt-express:interchange:data-type:delivery-routes:v1"
+    "data_ype": "schema/json/traffic-alerce-senda-error-response-v1.json"
   },
   "error": {
     "code": 409,
