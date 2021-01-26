@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/REFERENCES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/images/JSON Schema Tool.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/images/JsonSchemaValidatorOnline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/images/Structuring a complex schema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/images/UnderstandingJSONSchema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/references/images/json-schema-faker.js.org.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/json/common/common-mep-acknowlegdement-response-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
@@ -51,6 +48,21 @@
       <option name="presentableId" value="Default" />
       <updated>1611675030473</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1611675438557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611675438557</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1611675472064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611675472064</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
