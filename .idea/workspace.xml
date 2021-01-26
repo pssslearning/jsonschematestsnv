@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_KO.json" beforeDir="false" afterPath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_KO.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_OK.json" beforeDir="false" afterPath="$PROJECT_DIR$/samples/json/common/common-mep-acknowlegdement-response-v1_OK.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +31,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/json/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/schema/json/traffic" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\schema\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\common" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv" />
     </key>
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611681126771</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ACK Schema VI">
+      <created>1611681589341</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611681589341</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +126,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -126,6 +135,7 @@
     <MESSAGE value="ACK Schema III" />
     <MESSAGE value="ACK Schema IV" />
     <MESSAGE value="ACK Schema V" />
-    <option name="LAST_COMMIT_MESSAGE" value="ACK Schema V" />
+    <MESSAGE value="ACK Schema VI" />
+    <option name="LAST_COMMIT_MESSAGE" value="ACK Schema VI" />
   </component>
 </project>
