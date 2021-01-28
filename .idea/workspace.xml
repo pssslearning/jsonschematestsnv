@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/samples/json/traffic/EjemploEvent.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/json/traffic/EjemploShipping.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,23 +24,31 @@
     </option>
   </component>
   <component name="ProjectId" id="1nc2Ow1dxQUnazMsFDlrPQqhC0x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/schema/json/traffic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/json/traffic" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\schema\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\common" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\traffic\old" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -139,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611684696709</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Traffic Corrections">
+      <created>1611685053784</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1611685053784</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +174,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Metadata + Ack Schemas" />
     <MESSAGE value="ACK Schema II" />
@@ -166,6 +186,7 @@
     <MESSAGE value="Traffic Schemas Added II" />
     <MESSAGE value="Traffic Schemas Added III" />
     <MESSAGE value="Metadata correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metadata correction" />
+    <MESSAGE value="Traffic Corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Traffic Corrections" />
   </component>
 </project>

@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "interchange_id": "08C3863E-D3E5-4A00-9AA0-256D13F2355D",
+    "time_stamp": "2021-01-27T17:10:00.8362533+01:00",
+    "correlation_id": "08C3863E-D3E5-4A00-9AA0-256D13F2355D",
+    "source": "urn:com:cttexpress:interchange:source:sgc",
+    "data_type": "schema/json/traffic/traffic-cdc-shipping-set-v1.json"
+  },
+  "shippings": [
+    {
+      "shipping_code": "0000020000029482194584",
+      "expedition_code": "0000020000029482194584",
+      "is_expedition_prime": "1",
+      "shipping_date": "2021-01-27",
+      "theoretic_delivery_datetime": "2021-01-28 23:30:00.100",
+      "item_count": "1",
+      "shipping_type_code": "19H",
+      "agency_client_code": "000002",
+      "agency_origin_code": "000002",
+      "sender_name": "SERV LOGIST INT ARLANZON SL",
+      "sender_address": "AV DEL ARLANZON, 11",
+      "sender_address_2": "BURGOS",
+      "origin_postal_code": "09004",
+      "origin_country_code": "ES",
+      "agency_destin_code": "004902",
+      "recipient_name": "ALBERTO DOMINGUEZ CASTILLO",
+      "recipient_address": "AVDA. LUIS MORAN Nº 4 - 1º ESC - 2",
+      "recipient_address_2": "BENAVENTE",
+      "destin_postal_code": "49600",
+      "destin_country_code": "ES",
+      "shipping_status_code": "0",
+      "shipping_status_plus_code": "0",
+      "shipping_status_datetime": "2021-01-27 16:57:56.683",
+      "items": [
+        {
+          "item_code": "0000020000029482194584001",
+          "item_order": 1,
+          "is_nulled": "0"
+        }
+      ]
+    },
+    {
+      "shipping_code": "0000020000029482194576",
+      "expedition_code": "0000020000029482194576",
+      "is_expedition_prime": "1",
+      "shipping_date": "2021-01-27",
+      "theoretic_delivery_datetime": "2021-01-28 23:30:00.100",
+      "item_count": "1",
+      "shipping_type_code": "19H",
+      "agency_client_code": "000002",
+      "agency_origin_code": "000002",
+      "sender_name": "SERV LOGIST INT ARLANZON SL",
+      "sender_address": "AV DEL ARLANZON, 11",
+      "sender_address_2": "BURGOS",
+      "origin_postal_code": "09004",
+      "origin_country_code": "ES",
+      "agency_destin_code": "000818",
+      "recipient_name": "ab.linkenet ahuyentando",
+      "recipient_address": "madrazo 27- nº 2 - 1ª",
+      "recipient_address_2": "BARCELONA",
+      "destin_postal_code": "08006",
+      "destin_country_code": "ES",
+      "shipping_status_code": "90",
+      "shipping_status_plus_code": "0",
+      "shipping_status_datetime": "2021-01-27 16:58:44.871",
+      "items": [
+        {
+          "item_code": "0000020000029482194576001",
+          "item_order": 1,
+          "is_nulled": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "interchange_id": "8C3C39B6-CD6A-4B22-982A-66A0CFD3189B",
+    "time_stamp": "2021-01-27T17:10:00.8362533+01:00",
+    "correlation_id": "8C3C39B6-CD6A-4B22-982A-66A0CFD3189B",
+    "source": "urn:com:cttexpress:interchange:source:sgc",
+    "data_type": "schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json"
+  },
+  "shipping_item_events": [
+    {
+      "ruid": "A872F321612345859CC0CD08A96D797A",
+      "item_code": "0000020000029482194584001",
+      "shipping_code": "0000020000029482194584",
+      "event_datetime": "2021-01-27 16:57:56.683",
+      "is_nulled": "0",
+      "shipping_status_code": "0",
+      "event_text": "SGCTRL",
+      "event_agency_code": "999999",
+      "is_mobility_event": "0",
+      "event_type_code": "MANIFEST_EVTT",
+      "stop_code": "77f9af787b7b4b9b92e3d5ddf30bcea5"
+    },
+    {
+      "ruid": "69B4B4587F63461389474A4BDB5C3511",
+      "item_code": "0000020000029482194576001",
+      "shipping_code": "0000020000029482194576",
+      "event_datetime": "2021-01-27 16:58:44.871",
+      "is_nulled": "0",
+      "shipping_status_code": "90",
+      "event_agency_code": "999999",
+      "is_mobility_event": "0",
+      "event_type_code": "NULLED_EVTT",
+      "stop_code": "77c5f5029d7e44f28784d031f16c7db5"
+    }
+  ]
+}

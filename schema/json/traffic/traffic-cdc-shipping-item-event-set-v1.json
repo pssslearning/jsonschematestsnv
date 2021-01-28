@@ -30,9 +30,9 @@
         "title": "The items schema",
         "description": "An explanation about the purpose of this instance.",
         "required": [
-          "uid",
+          "ruid",
           "item_code",
-          "eventDatetime",
+          "event_datetime",
           "is_nulled",
           "shipping_status_code",
           "event_agency_code",
@@ -96,7 +96,8 @@
             "examples": [
               "0"
             ],
-            "pattern": "^[0-1]$"
+            "minLength": 1,
+            "maxLength": 30
           },
           "shipping_status_code": {
             "$id": "#/properties/shipping_item_events/items/properties/shipping_status_code",
@@ -107,7 +108,7 @@
             "examples": [
               "3"
             ],
-            "pattern": "^[0-99]$"
+            "pattern": "^[0-9]{1,2}$"
           },
           "shipping_status_plus_code": {
             "$id": "#/properties/shipping_item_events/items/properties/shipping_status_plus_code",
@@ -188,6 +189,18 @@
             "examples": [
               "1"
             ]
+          },
+          "event_type_code": {
+            "$id": "#/properties/shipping_item_events/items/properties/event_type_code",
+            "type": "string",
+            "title": "The event_type_code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "MANIFEST_EVTT"
+            ],
+            "minLength": 8,
+            "maxLength": 64
           },
           "stop_code": {
             "$id": "#/properties/shipping_item_events/items/properties/stop_code",
