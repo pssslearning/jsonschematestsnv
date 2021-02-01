@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "interchange_id": "2FA0DD1C-F5BC-461D-95A6-E956A6B19053",
+    "time_stamp": "2021-02-01T12:43:13.4728385+01:00",
+    "correlation_id": "2FA0DD1C-F5BC-461D-95A6-E956A6B19053",
+    "source": "urn:com:cttexpress:interchange:source:sgc",
+    "data_type": "schema/json/example/example-fct-commitment-date.v1.json"
+  },
+  "When": "2021-01-07T10:33:24.9699934+01:00",
+  "Transmited": "2021-01-12T10:33:24.9699934+01:00",
+  "Who": "Micro-States",
+  "Event-Caused-IT": "",
+  "Shipping-Code": "0099030099039477915579",
+  "Shipping-Item-Code": "0099030099039477915579001",
+  "Agency-Client-Code": "009903",
+  "Client-Code": "2017",
+  "Origin-Postal-Code": "333333",
+  "Origin-Country-Code": "PT",
+  "Destin-Postal-Code": "41002",
+  "Destin-Country-Code": "ES",
+  "Shiping-Type-Code": "19h",
+  "Shipping-Weight": "1",
+  "Current-State": "0-0",
+  "Requested-Commitment-date": "2020-01-22T10:33:24.9699934+01:00",
+  "Is-Saturday-Required": false,
+  "Is-Sunday-Required": false
+}
