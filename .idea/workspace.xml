@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/samples/json/traffic/EjemploEvent.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/json/traffic/EjemploShipping.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/json/example/example-fct-commitment-date.v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-item-event-set-v1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/traffic/traffic-cdc-shipping-set-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/shared/shared-sys-kafka-message-metadata-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611685053784</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed Shippings SET">
+      <created>1611819172973</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1611819172973</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +192,7 @@
     <MESSAGE value="Traffic Schemas Added III" />
     <MESSAGE value="Metadata correction" />
     <MESSAGE value="Traffic Corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Traffic Corrections" />
+    <MESSAGE value="Fixed Shippings SET" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Shippings SET" />
   </component>
 </project>

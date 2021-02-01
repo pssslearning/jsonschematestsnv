@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/example/example-fct-commitment-date.v1.json",
+  "type": "object",
+  "title": "Commitment Date events (Domain:example)(Classification: fact)(Version: v1.0.0)",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "metadata",
+    "When",
+    "Transmited",
+    "Who",
+    "Event-Caused-IT",
+    "Shipping-Code",
+    "Shipping-Item-Code",
+    "Agency-Client-Code",
+    "Client-Code",
+    "Origin-Postal-Code",
+    "Origin-Country-Code",
+    "Destin-Postal-Code",
+    "Destin-Country-Code",
+    "Shiping-Type-Code",
+    "Shipping-Weight",
+    "Current-State",
+    "Requested-Commitment-date",
+    "Is-Saturday-Required",
+    "Is-Sunday-Required"
+  ],
+  "properties": {
+    "metadata": {
+      "$ref": "https://pssslearning.github.io/jsonschematestsnv/schema/json/shared/shared-sys-kafka-message-metadata-v1.json#"
+    },
+    "When": {
+      "$id": "#/properties/When",
+      "type": "string",
+      "title": "The When schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "2021-01-07T10:33:24.9699934+01:00"
+      ]
+    },
+    "Transmited": {
+      "$id": "#/properties/Transmited",
+      "type": "string",
+      "title": "The Transmited schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "2021-01-12T10:33:24.9699934+01:00"
+      ]
+    },
+    "Who": {
+      "$id": "#/properties/Who",
+      "type": "string",
+      "title": "The Who schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "Micro-States"
+      ]
+    },
+    "Event-Caused-IT": {
+      "$id": "#/properties/Event-Caused-IT",
+      "type": "string",
+      "title": "The Event-Caused-IT schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        ""
+      ]
+    },
+    "Shipping-Code": {
+      "$id": "#/properties/Shipping-Code",
+      "type": "string",
+      "title": "The Shipping-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "0099030099039477915579"
+      ]
+    },
+    "Shipping-Item-Code": {
+      "$id": "#/properties/Shipping-Item-Code",
+      "type": "string",
+      "title": "The Shipping-Item-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "0099030099039477915579001"
+      ]
+    },
+    "Agency-Client-Code": {
+      "$id": "#/properties/Agency-Client-Code",
+      "type": "string",
+      "title": "The Agency-Client-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "009903"
+      ]
+    },
+    "Client-Code": {
+      "$id": "#/properties/Client-Code",
+      "type": "string",
+      "title": "The Client-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "2017"
+      ]
+    },
+    "Origin-Postal-Code": {
+      "$id": "#/properties/Origin-Postal-Code",
+      "type": "string",
+      "title": "The Origin-Postal-Code schema",
+      "examples": [
+        "333333"
+      ]
+    },
+    "Origin-Country-Code": {
+      "$id": "#/properties/Origin-Country-Code",
+      "type": "string",
+      "title": "The Origin-Country-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "ES",
+      "examples": [
+        "PT"
+      ],
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "Destin-Postal-Code": {
+      "$id": "#/properties/Destin-Postal-Code",
+      "type": "string",
+      "title": "The Destin-Postal-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "41002"
+      ]
+    },
+    "Destin-Country-Code": {
+      "$id": "#/properties/Destin-Country-Code",
+      "type": "string",
+      "title": "The Destin-Country-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "ES"
+      ]
+    },
+    "Shiping-Type-Code": {
+      "$id": "#/properties/Shiping-Type-Code",
+      "type": "string",
+      "title": "The Shiping-Type-Code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "19h"
+      ]
+    },
+    "Shipping-Weight": {
+      "$id": "#/properties/Shipping-Weight",
+      "type": "string",
+      "title": "The Shipping-Weight schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "1"
+      ]
+    },
+    "Current-State": {
+      "$id": "#/properties/Current-State",
+      "type": "string",
+      "title": "The Current-State schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "0-0"
+      ]
+    },
+    "Requested-Commitment-date": {
+      "$id": "#/properties/Requested-Commitment-date",
+      "type": "string",
+      "title": "The Requested-Commitment-date schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2020-01-22T10:33:24.9699934+01:00"
+      ]
+    },
+    "Is-Saturday-Required": {
+      "$id": "#/properties/Is-Saturday-Required",
+      "type": "boolean",
+      "title": "The Is-Saturday-Required schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "Is-Sunday-Required": {
+      "$id": "#/properties/Is-Sunday-Required",
+      "type": "boolean",
+      "title": "The Is-Sunday-Required schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    }
+  },
+  "additionalProperties": false
+}

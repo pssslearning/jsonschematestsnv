@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://pssslearning.github.io/jsonschematests/schema/json/shared/v1/kafka-messages-metadata-v1.json",
+  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/shared/shared-sys-kafka-message-metadata-v1.json",
   "type": "object",
   "title": "shared-sys-kafka-message-metadata-v1 (Domain:Traffic)(Classification: Fact)(Version: v1.0.0)",
   "description": "Sección de contexto/metadata común para los mensajes de intercambio en Apache Kafka",
