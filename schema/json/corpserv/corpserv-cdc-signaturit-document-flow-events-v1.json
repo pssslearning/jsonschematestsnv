@@ -1,0 +1,334 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/common/common-mep-acknowlegdement-response-v1.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "document",
+    "created_at",
+    "type"
+  ],
+  "properties": {
+    "document": {
+      "$id": "#/properties/document",
+      "type": "object",
+      "title": "The document schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        {
+          "created_at": "2021-01-20T12:46:43+0000",
+          "file": {
+            "name": "LoremIpsum1.pdf",
+            "pages": 1,
+            "size": 57844
+          },
+          "id": "7e867358-3874-4321-9459-5e8aafdf6eb9",
+          "events": [
+            {
+              "created_at": "2021-01-20T12:46:46+0000",
+              "type": "email_processed"
+            },
+            {
+              "created_at": "2021-01-20T12:46:49+0000",
+              "type": "email_delivered"
+            },
+            {
+              "created_at": "2021-01-20T12:57:26+0000",
+              "type": "document_opened"
+            },
+            {
+              "created_at": "2021-01-20T12:58:37+0000",
+              "type": "terms_and_conditions_accepted"
+            },
+            {
+              "created_at": "2021-01-20T12:58:37+0000",
+              "type": "document_signed"
+            },
+            {
+              "created_at": "2021-01-20T12:58:41+0000",
+              "type": "document_completed"
+            }
+          ],
+          "data": {
+            "text_1": "12345678A",
+            "text_2": "Iván J Fontalvo Olivares"
+          },
+          "signature": {
+            "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
+          },
+          "email": "ivan.fontalvo@cttexpress.com",
+          "name": "Ivan Fontalvo Olivares",
+          "status": "completed"
+        }
+      ],
+      "required": [
+        "created_at",
+        "file",
+        "id",
+        "events",
+        "data",
+        "signature",
+        "email",
+        "name",
+        "status"
+      ],
+      "properties": {
+        "created_at": {
+          "$id": "#/properties/document/properties/created_at",
+          "type": "string",
+          "title": "The created_at schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            "2021-01-20T12:46:43+0000"
+          ]
+        },
+        "file": {
+          "$id": "#/properties/document/properties/file",
+          "type": "object",
+          "title": "The file schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            {
+              "name": "LoremIpsum1.pdf",
+              "pages": 1,
+              "size": 57844
+            }
+          ],
+          "required": [
+            "name",
+            "pages",
+            "size"
+          ],
+          "properties": {
+            "name": {
+              "$id": "#/properties/document/properties/file/properties/name",
+              "type": "string",
+              "title": "The name schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                "LoremIpsum1.pdf"
+              ]
+            },
+            "pages": {
+              "$id": "#/properties/document/properties/file/properties/pages",
+              "type": "integer",
+              "title": "The pages schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                1
+              ]
+            },
+            "size": {
+              "$id": "#/properties/document/properties/file/properties/size",
+              "type": "integer",
+              "title": "The size schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                57844
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "id": {
+          "$id": "#/properties/document/properties/id",
+          "type": "string",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            "7e867358-3874-4321-9459-5e8aafdf6eb9"
+          ]
+        },
+        "events": {
+          "$id": "#/properties/document/properties/events",
+          "type": "array",
+          "title": "The events schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            [
+              {
+                "created_at": "2021-01-20T12:46:46+0000",
+                "type": "email_processed"
+              },
+              {
+                "created_at": "2021-01-20T12:46:49+0000",
+                "type": "email_delivered"
+              }
+            ]
+          ],
+          "additionalItems": false,
+          "items": {
+            "$id": "#/properties/document/properties/events/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+              [
+                {
+                  "created_at": "2021-01-20T12:46:46+0000",
+                  "type": "email_processed"
+                },
+                {
+                  "created_at": "2021-01-20T12:46:49+0000",
+                  "type": "email_delivered"
+                },
+                {
+                  "created_at": "2021-01-20T12:57:26+0000",
+                  "type": "document_opened"
+                },
+                {
+                  "created_at": "2021-01-20T12:58:37+0000",
+                  "type": "terms_and_conditions_accepted"
+                },
+                {
+                  "created_at": "2021-01-20T12:58:37+0000",
+                  "type": "document_signed"
+                },
+                {
+                  "created_at": "2021-01-20T12:58:41+0000",
+                  "type": "document_completed"
+                }
+              ]
+            ],
+            "required": [
+              "created_at",
+              "type"
+            ],
+            "properties": {
+              "created_at": {
+                "$id": "#/properties/document/properties/events/items/properties/created_at",
+                "type": "string",
+                "title": "The created_at schema",
+                "description": "An explanation about the purpose of this instance.",
+                "examples": [
+                  "2021-01-20T12:46:46+0000"
+                ]
+              },
+              "type": {
+                "$id": "#/properties/document/properties/events/items/properties/type",
+                "type": "string",
+                "title": "The type schema",
+                "description": "An explanation about the purpose of this instance.",
+                "examples": [
+                  "email_processed"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "data": {
+          "$id": "#/properties/document/properties/data",
+          "type": "object",
+          "title": "The data schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            {
+              "text_1": "12345678A",
+              "text_2": "Iván J Fontalvo Olivares"
+            }
+          ],
+          "required": [
+            "text_1",
+            "text_2"
+          ],
+          "properties": {
+            "text_1": {
+              "$id": "#/properties/document/properties/data/properties/text_1",
+              "type": "string",
+              "title": "The text_1 schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                "12345678A"
+              ]
+            },
+            "text_2": {
+              "$id": "#/properties/document/properties/data/properties/text_2",
+              "type": "string",
+              "title": "The text_2 schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                "Iván J Fontalvo Olivares"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "signature": {
+          "$id": "#/properties/document/properties/signature",
+          "type": "object",
+          "title": "The signature schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            {
+              "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
+            }
+          ],
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#/properties/document/properties/signature/properties/id",
+              "type": "string",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "examples": [
+                "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "email": {
+          "$id": "#/properties/document/properties/email",
+          "type": "string",
+          "title": "The email schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            "ivan.fontalvo@cttexpress.com"
+          ]
+        },
+        "name": {
+          "$id": "#/properties/document/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            "Ivan Fontalvo Olivares"
+          ]
+        },
+        "status": {
+          "$id": "#/properties/document/properties/status",
+          "type": "string",
+          "title": "The status schema",
+          "description": "An explanation about the purpose of this instance.",
+          "examples": [
+            "completed"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "created_at": {
+      "$id": "#/properties/created_at",
+      "type": "string",
+      "title": "The created_at schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "2021-01-20T12:58:45+0000"
+      ]
+    },
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "title": "The type schema",
+      "description": "An explanation about the purpose of this instance.",
+      "examples": [
+        "audit_trail_completed"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/samples/json/example/example-fct-commitment-date.v1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\example" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\schema\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\common" />
@@ -169,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612190639198</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Añadir dominio example">
+      <created>1612191454376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612191454376</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +208,7 @@
     <MESSAGE value="Traffic Corrections" />
     <MESSAGE value="Fixed Shippings SET" />
     <MESSAGE value="Añadir example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadir example" />
+    <MESSAGE value="Añadir dominio example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadir dominio example" />
   </component>
 </project>
