@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/samples/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
     </list>
@@ -34,16 +35,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/json/example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/samples/json" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\example" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\schema\json\traffic" />
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\common" />
-      <recent name="C:\Users\pablo.sancho\home\_TECHEDGE\_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pablo.sancho\home\_TECHEDGE_PROYECTOS\202004_CTT_EXPRESS\ESTANDARIZACION_EVENTOS_KAFKA\IdeaProjects\jsonschematestsnv\samples\json\traffic\old" />
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612462304728</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Eventos Signaturit II">
+      <created>1612462582255</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612462582255</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +225,7 @@
     <MESSAGE value="Añadir example" />
     <MESSAGE value="Añadir dominio example" />
     <MESSAGE value="Eventos Signaturit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eventos Signaturit" />
+    <MESSAGE value="Eventos Signaturit II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eventos Signaturit II" />
   </component>
 </project>

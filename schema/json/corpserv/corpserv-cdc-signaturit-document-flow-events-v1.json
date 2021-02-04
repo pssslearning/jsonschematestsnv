@@ -2,123 +2,28 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json",
   "type": "object",
-  "title": "The root schema",
-  "description": "The root schema comprises the entire JSON document.",
-  "examples": [
-    {
-      "document": {
-        "created_at": "2021-01-20T12:46:43+0000",
-        "file": {
-          "name": "LoremIpsum1.pdf",
-          "pages": 1,
-          "size": 57844
-        },
-        "id": "7e867358-3874-4321-9459-5e8aafdf6eb9",
-        "events": [
-          {
-            "created_at": "2021-01-20T12:46:46+0000",
-            "type": "email_processed"
-          },
-          {
-            "created_at": "2021-01-20T12:46:49+0000",
-            "type": "email_delivered"
-          },
-          {
-            "created_at": "2021-01-20T12:57:26+0000",
-            "type": "document_opened"
-          },
-          {
-            "created_at": "2021-01-20T12:58:37+0000",
-            "type": "terms_and_conditions_accepted"
-          },
-          {
-            "created_at": "2021-01-20T12:58:37+0000",
-            "type": "document_signed"
-          },
-          {
-            "created_at": "2021-01-20T12:58:41+0000",
-            "type": "document_completed"
-          }
-        ],
-        "data": {
-          "text_1": "12345678A",
-          "text_2": "Iván J Fontalvo Olivares"
-        },
-        "signature": {
-          "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
-        },
-        "email": "ivan.fontalvo@cttexpress.com",
-        "name": "Ivan Fontalvo Olivares",
-        "status": "completed"
-      },
-      "created_at": "2021-01-20T12:58:45+0000",
-      "type": "audit_trail_completed"
-    }
-  ],
+  "title": "corpserv-cdc-signaturit-document-flow-events-v1 (Domain:CorpServ)(Classification: CDC)(Version: v1.0.0)",
+  "description": "Mensaje recibido por subscripcion de eventos de Signaturit",
   "required": [
+    "metadata",
     "document",
     "created_at",
     "type"
   ],
   "properties": {
+    "metadata": {
+      "$ref": "https://pssslearning.github.io/jsonschematestsnv/schema/json/shared/shared-sys-kafka-message-metadata-v1.json#"
+    },
     "document": {
       "$id": "#/properties/document",
       "type": "object",
-      "title": "The document schema",
-      "description": "An explanation about the purpose of this instance.",
-      "examples": [
-        {
-          "created_at": "2021-01-20T12:46:43+0000",
-          "file": {
-            "name": "LoremIpsum1.pdf",
-            "pages": 1,
-            "size": 57844
-          },
-          "id": "7e867358-3874-4321-9459-5e8aafdf6eb9",
-          "events": [
-            {
-              "created_at": "2021-01-20T12:46:46+0000",
-              "type": "email_processed"
-            },
-            {
-              "created_at": "2021-01-20T12:46:49+0000",
-              "type": "email_delivered"
-            },
-            {
-              "created_at": "2021-01-20T12:57:26+0000",
-              "type": "document_opened"
-            },
-            {
-              "created_at": "2021-01-20T12:58:37+0000",
-              "type": "terms_and_conditions_accepted"
-            },
-            {
-              "created_at": "2021-01-20T12:58:37+0000",
-              "type": "document_signed"
-            },
-            {
-              "created_at": "2021-01-20T12:58:41+0000",
-              "type": "document_completed"
-            }
-          ],
-          "data": {
-            "text_1": "12345678A",
-            "text_2": "Iván J Fontalvo Olivares"
-          },
-          "signature": {
-            "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
-          },
-          "email": "ivan.fontalvo@cttexpress.com",
-          "name": "Ivan Fontalvo Olivares",
-          "status": "completed"
-        }
-      ],
+      "title": "Datos asociados al Documento objeto de Firma",
+      "description": "Datos asociados al Documento objeto de Firma incluyendo los diferentes eventos asociados al curso de su tratamiento.",
       "required": [
         "created_at",
         "file",
         "id",
         "events",
-        "data",
         "signature",
         "email",
         "name",
@@ -128,8 +33,8 @@
         "created_at": {
           "$id": "#/properties/document/properties/created_at",
           "type": "string",
-          "title": "The created_at schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Fecha de Creación del Documento",
+          "description": "Fecha en la que se incia el flujo de proceso de firma del documento.",
           "examples": [
             "2021-01-20T12:46:43+0000"
           ]
@@ -137,16 +42,9 @@
         "file": {
           "$id": "#/properties/document/properties/file",
           "type": "object",
-          "title": "The file schema",
-          "description": "An explanation about the purpose of this instance.",
-          "examples": [
-            {
-              "name": "LoremIpsum1.pdf",
-              "pages": 1,
-              "size": 57844
-            }
-          ],
-          "required": [
+          "title": "Información del archivo objeto de firma",
+          "description": "Información del archivo objeto de firma",
+            "required": [
             "name",
             "pages",
             "size"
@@ -155,8 +53,8 @@
             "name": {
               "$id": "#/properties/document/properties/file/properties/name",
               "type": "string",
-              "title": "The name schema",
-              "description": "An explanation about the purpose of this instance.",
+              "title": "Nombre del archivo",
+              "description": "Nombre del Archivo",
               "examples": [
                 "LoremIpsum1.pdf"
               ]
@@ -164,8 +62,8 @@
             "pages": {
               "$id": "#/properties/document/properties/file/properties/pages",
               "type": "integer",
-              "title": "The pages schema",
-              "description": "An explanation about the purpose of this instance.",
+              "title": "Número de Páginas que contiene el documento.",
+              "description": "Número de Páginas que contiene el documento.",
               "examples": [
                 1
               ]
@@ -173,8 +71,8 @@
             "size": {
               "$id": "#/properties/document/properties/file/properties/size",
               "type": "integer",
-              "title": "The size schema",
-              "description": "An explanation about the purpose of this instance.",
+              "title": "Tamaño en Bytes del archivo.",
+              "description": "Tamaño en Bytes del archivo.",
               "examples": [
                 57844
               ]
@@ -185,8 +83,8 @@
         "id": {
           "$id": "#/properties/document/properties/id",
           "type": "string",
-          "title": "The id schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Identificador único del documento.",
+          "description": "Identificador único del documento objeto del flujo de tratamiento de firma.",
           "examples": [
             "7e867358-3874-4321-9459-5e8aafdf6eb9"
           ]
@@ -194,54 +92,14 @@
         "events": {
           "$id": "#/properties/document/properties/events",
           "type": "array",
-          "title": "The events schema",
-          "description": "An explanation about the purpose of this instance.",
-          "examples": [
-            [
-              {
-                "created_at": "2021-01-20T12:46:46+0000",
-                "type": "email_processed"
-              },
-              {
-                "created_at": "2021-01-20T12:46:49+0000",
-                "type": "email_delivered"
-              }
-            ]
-          ],
+          "title": "Array de Eventos anteriores que ya se han producido.",
+          "description": "Array de Eventos anteriores que ya se han producido durante el flujo de tratamiento de firma.",
           "additionalItems": false,
           "items": {
             "$id": "#/properties/document/properties/events/items",
             "type": "object",
-            "title": "The items schema",
-            "description": "An explanation about the purpose of this instance.",
-            "examples": [
-              [
-                {
-                  "created_at": "2021-01-20T12:46:46+0000",
-                  "type": "email_processed"
-                },
-                {
-                  "created_at": "2021-01-20T12:46:49+0000",
-                  "type": "email_delivered"
-                },
-                {
-                  "created_at": "2021-01-20T12:57:26+0000",
-                  "type": "document_opened"
-                },
-                {
-                  "created_at": "2021-01-20T12:58:37+0000",
-                  "type": "terms_and_conditions_accepted"
-                },
-                {
-                  "created_at": "2021-01-20T12:58:37+0000",
-                  "type": "document_signed"
-                },
-                {
-                  "created_at": "2021-01-20T12:58:41+0000",
-                  "type": "document_completed"
-                }
-              ]
-            ],
+            "title": "Cada uno de los eventos.",
+            "description": "Cada uno de los eventos que forman parte del Array.",
             "required": [
               "created_at",
               "type"
@@ -250,8 +108,8 @@
               "created_at": {
                 "$id": "#/properties/document/properties/events/items/properties/created_at",
                 "type": "string",
-                "title": "The created_at schema",
-                "description": "An explanation about the purpose of this instance.",
+                "title": "Fecha y Hora de creación del evento.",
+                "description": "Fecha y Hora de creación del evento.",
                 "examples": [
                   "2021-01-20T12:46:46+0000"
                 ]
@@ -259,7 +117,7 @@
               "type": {
                 "$id": "#/properties/document/properties/events/items/properties/type",
                 "type": "string",
-                "title": "The type schema",
+                "title": "El Tipo de Evento que se reporta",
                 "description": "An explanation about the purpose of this instance.",
                 "examples": [
                   "email_processed"
@@ -272,50 +130,21 @@
         "data": {
           "$id": "#/properties/document/properties/data",
           "type": "object",
-          "title": "The data schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Estructura compuesta de tuplas clave-valor de los parámetros del area de formulario.",
+          "description": "Estructura compuesta de tuplas clave-valor de los parámetros de los datos del documento susceptibles de ser introducidos por el destinatario.",
           "examples": [
             {
               "text_1": "12345678A",
               "text_2": "Iván J Fontalvo Olivares"
             }
           ],
-          "required": [
-            "text_1",
-            "text_2"
-          ],
-          "properties": {
-            "text_1": {
-              "$id": "#/properties/document/properties/data/properties/text_1",
-              "type": "string",
-              "title": "The text_1 schema",
-              "description": "An explanation about the purpose of this instance.",
-              "examples": [
-                "12345678A"
-              ]
-            },
-            "text_2": {
-              "$id": "#/properties/document/properties/data/properties/text_2",
-              "type": "string",
-              "title": "The text_2 schema",
-              "description": "An explanation about the purpose of this instance.",
-              "examples": [
-                "Iván J Fontalvo Olivares"
-              ]
-            }
-          },
-          "additionalProperties": false
+         "additionalProperties": true
         },
         "signature": {
           "$id": "#/properties/document/properties/signature",
           "type": "object",
-          "title": "The signature schema",
-          "description": "An explanation about the purpose of this instance.",
-          "examples": [
-            {
-              "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
-            }
-          ],
+          "title": "Estructura con la información asociada a la firma.",
+          "description": "Estructura con la información asociada a la firma.",
           "required": [
             "id"
           ],
@@ -323,8 +152,8 @@
             "id": {
               "$id": "#/properties/document/properties/signature/properties/id",
               "type": "string",
-              "title": "The id schema",
-              "description": "An explanation about the purpose of this instance.",
+              "title": "Identificador único asignado por Signaturit al proceso de firma asociado.",
+              "description": "Identificador único asignado por Signaturit al proceso de firma asociado.",
               "examples": [
                 "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
               ]
@@ -335,8 +164,8 @@
         "email": {
           "$id": "#/properties/document/properties/email",
           "type": "string",
-          "title": "The email schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Dirección de email del destinatario (Firmante).",
+          "description": "Dirección de email del destinatario (Firmante).",
           "examples": [
             "ivan.fontalvo@cttexpress.com"
           ]
@@ -344,8 +173,8 @@
         "name": {
           "$id": "#/properties/document/properties/name",
           "type": "string",
-          "title": "The name schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Nombre del destinatario (Firmante).",
+          "description": "Nombre del destinatario (Firmante).",
           "examples": [
             "Ivan Fontalvo Olivares"
           ]
@@ -353,8 +182,8 @@
         "status": {
           "$id": "#/properties/document/properties/status",
           "type": "string",
-          "title": "The status schema",
-          "description": "An explanation about the purpose of this instance.",
+          "title": "Estado del documento en el flujo de tratamiento de firma.",
+          "description": "Estado del documento en el flujo de tratamiento de firma.",
           "examples": [
             "completed"
           ]
@@ -365,8 +194,8 @@
     "created_at": {
       "$id": "#/properties/created_at",
       "type": "string",
-      "title": "The created_at schema",
-      "description": "An explanation about the purpose of this instance.",
+      "title": "Fecha y Hora de la creación del evento actual.",
+      "description": "Fecha y Hora de la creación del evento actual.",
       "examples": [
         "2021-01-20T12:58:45+0000"
       ]
@@ -374,8 +203,8 @@
     "type": {
       "$id": "#/properties/type",
       "type": "string",
-      "title": "The type schema",
-      "description": "An explanation about the purpose of this instance.",
+      "title": "Tipo del evento actual.",
+      "description": "Tipo del evento actual.",
       "examples": [
         "audit_trail_completed"
       ]
