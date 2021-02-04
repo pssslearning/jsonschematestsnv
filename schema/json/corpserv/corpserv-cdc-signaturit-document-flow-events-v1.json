@@ -1,9 +1,60 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/common/common-mep-acknowlegdement-response-v1.json",
+  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json",
   "type": "object",
   "title": "The root schema",
   "description": "The root schema comprises the entire JSON document.",
+  "examples": [
+    {
+      "document": {
+        "created_at": "2021-01-20T12:46:43+0000",
+        "file": {
+          "name": "LoremIpsum1.pdf",
+          "pages": 1,
+          "size": 57844
+        },
+        "id": "7e867358-3874-4321-9459-5e8aafdf6eb9",
+        "events": [
+          {
+            "created_at": "2021-01-20T12:46:46+0000",
+            "type": "email_processed"
+          },
+          {
+            "created_at": "2021-01-20T12:46:49+0000",
+            "type": "email_delivered"
+          },
+          {
+            "created_at": "2021-01-20T12:57:26+0000",
+            "type": "document_opened"
+          },
+          {
+            "created_at": "2021-01-20T12:58:37+0000",
+            "type": "terms_and_conditions_accepted"
+          },
+          {
+            "created_at": "2021-01-20T12:58:37+0000",
+            "type": "document_signed"
+          },
+          {
+            "created_at": "2021-01-20T12:58:41+0000",
+            "type": "document_completed"
+          }
+        ],
+        "data": {
+          "text_1": "12345678A",
+          "text_2": "Iván J Fontalvo Olivares"
+        },
+        "signature": {
+          "id": "63fcfb72-af54-4d3c-8540-08c8a9b851b3"
+        },
+        "email": "ivan.fontalvo@cttexpress.com",
+        "name": "Ivan Fontalvo Olivares",
+        "status": "completed"
+      },
+      "created_at": "2021-01-20T12:58:45+0000",
+      "type": "audit_trail_completed"
+    }
+  ],
   "required": [
     "document",
     "created_at",

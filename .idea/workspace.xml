@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612191454376</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Eventos Signaturit">
+      <created>1612462304728</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612462304728</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +216,7 @@
     <MESSAGE value="Fixed Shippings SET" />
     <MESSAGE value="Añadir example" />
     <MESSAGE value="Añadir dominio example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadir dominio example" />
+    <MESSAGE value="Eventos Signaturit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eventos Signaturit" />
   </component>
 </project>
