@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json",
+  "$id": "https://pssslearning.github.io/jsonschematestsnv/schema/json/corpserv/corpserv-cdc-digital-signature-document-flow-events-v1.json",
   "type": "object",
   "title": "corpserv-cdc-signaturit-document-flow-events-v1 (Domain:CorpServ)(Classification: CDC)(Version: v1.0.0)",
   "description": "Mensaje recibido por subscripcion de eventos de Signaturit",

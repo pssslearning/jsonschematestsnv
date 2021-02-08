@@ -4,7 +4,7 @@
     "time_stamp": "2021-01-20T12:58:03.5957639+01:00",
     "correlation_id": "6245F015-9A24-459E-B457-5B7BA33B57B3",
     "source": "urn:com:cttexpress:interchange:source:signaturit",
-    "data_type": "schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json"
+    "data_type": "schema/json/corpserv/corpserv-cdc-digital-signature-document-flow-events-v1.json"
   },
   "document": {
     "created_at": "2021-01-20T12:46:43+0000",

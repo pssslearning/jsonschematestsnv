@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f1a523-2653-42d2-be7e-1cfa958bc706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/samples/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/samples/json/corpserv/corpserv-cdc-digital-signature-document-flow-events-v1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-signaturit-document-flow-events-v1.json" beforeDir="false" afterPath="$PROJECT_DIR$/schema/json/corpserv/corpserv-cdc-digital-signature-document-flow-events-v1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612462582255</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Eventos Signaturit III">
+      <created>1612465359949</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612465359949</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +233,7 @@
     <MESSAGE value="Añadir dominio example" />
     <MESSAGE value="Eventos Signaturit" />
     <MESSAGE value="Eventos Signaturit II" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eventos Signaturit II" />
+    <MESSAGE value="Eventos Signaturit III" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eventos Signaturit III" />
   </component>
 </project>
